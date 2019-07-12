@@ -5,7 +5,7 @@ FROM node:alpine as builder
 WORKDIR /app
 
 # Copy files
-COPY package.json  .
+COPY package*.json  ./
 
 #commands to run
 RUN npm install
